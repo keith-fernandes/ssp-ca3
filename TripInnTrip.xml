@@ -1,43 +1,73 @@
 <?xml version = "1.0" encoding = "UTF-8" ?>
 <trip>
     <section name="beach">
+        <tour>
             <place>Copacabana, Brazil</place>
             <price>€250</price>
+        </tour>
+        <tour>
             <place>Ibiza, Spain</place>
             <price>€320</price>
+        </tour>
+        <tour VIP="true">
             <place>Bondi Beach, Australia</place>
             <price>€400</price>
+        </tour>
     </section>
     <section name="montains">
+        <tour>
             <place>Zhangjiajie, China</place>
             <price>€265</price>
+        </tour>
+        <tour>
             <place>Monte Everest, Nepal</place>
             <price>€350</price>
+        </tour>
+        <tour VIP="true">
             <place>Monte Fuji, Japan</place>
             <price>€400</price>
+        </tour>
     </section>
-    <section name="turistic_cities">
+    <section name="turistic cities">
+        <tour>
             <place>Hong Kong, China</place>
             <price>€220</price>
+        </tour>
+        <tour>
             <place>Bangkok, Tailand</place>
             <price>€280</price>
+        </tour>
+        <tour VIP="true">
             <place>Londres, England</place>
             <price>€300</price>
+        </tour>
     </section>
-    <section name="romantic_places">
+    <section name="romantic places">
+        <tour>
             <place>Cappadocia, Turkey</place>
             <price>€150</price>
+        </tour>
+        <tour>
             <place>Paris, France</place>
             <price>€200</price>
+        </tour>
+        <tour VIP="true">
             <place>Venice, Italy</place>
             <price>€280</price>
+        </tour>
     </section>
     <section name="adventures">
+        <tour>
             <place>Grand Canyon, USA</place>
             <price>€150</price>
+        </tour>
+        <tour>
             <place>Boracay, Philippines</place>
             <price>€180</price>
+        </tour>
+        <tour VIP="true">
             <place>New Zealand</place>
             <price>€250</price>
+        </tour>
     </section>
 </trip>
