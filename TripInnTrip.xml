@@ -9,7 +9,7 @@
             <place>Ibiza, Spain</place>
             <price>€320</price>
         </tour>
-        <tour VIP="true">
+        <tour>
             <place>Bondi Beach, Australia</place>
             <price>€400</price>
         </tour>
@@ -23,7 +23,7 @@
             <place>Monte Everest, Nepal</place>
             <price>€350</price>
         </tour>
-        <tour VIP="true">
+        <tour>
             <place>Monte Fuji, Japan</place>
             <price>€400</price>
         </tour>
@@ -37,7 +37,7 @@
             <place>Bangkok, Tailand</place>
             <price>€280</price>
         </tour>
-        <tour VIP="true">
+        <tour>
             <place>Londres, England</place>
             <price>€300</price>
         </tour>
@@ -51,7 +51,7 @@
             <place>Paris, France</place>
             <price>€200</price>
         </tour>
-        <tour VIP="true">
+        <tour>
             <place>Venice, Italy</place>
             <price>€280</price>
         </tour>
@@ -65,7 +65,7 @@
             <place>Boracay, Philippines</place>
             <price>€180</price>
         </tour>
-        <tour VIP="true">
+        <tour>
             <place>New Zealand</place>
             <price>€250</price>
         </tour>
