@@ -7,9 +7,9 @@
     <title>Trip Inn Trip!</title>
     <thead>
     <tr bgcolor="#4F4F4F">
-    <th>Tour<th>
-    <th>Place<th>
-    <th>Price<th>
+    <th>Tour</th>
+    <th>Place</th>
+    <th>Price</th>
     </tr>
     </thead>
 
