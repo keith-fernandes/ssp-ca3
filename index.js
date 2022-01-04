@@ -9,7 +9,9 @@ const   http = require('http'), // this module provides the HTTP server function
 const   router = express(), 
         server = http.createServer(router);
 
-        router.use(express.static(path.resolve(__dirname,'views'))); //Serving static content from "views" folder
+    router.use(express.static(path.resolve(__dirname,'views'))); //Serving static content from "views" folder
+
+    router.get('/get/html', function(req, res) {
 
     res.writeHead[200, {'Content-Type' : 'text/html'}];
 
@@ -23,7 +25,7 @@ const   router = express(),
     
     res.end(result.toString());
 
-});        
+});
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
     const addr = server.address();
