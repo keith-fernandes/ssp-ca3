@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8" ?>
 <trip>
-    <section name="beach">
+    <section name="Beach">
         <tour>
             <place>Copacabana, Brazil</place>
             <price>€250</price>
@@ -14,7 +14,7 @@
             <price>€400</price>
         </tour>
     </section>
-    <section name="montains">
+    <section name="Montains">
         <tour>
             <place>Zhangjiajie, China</place>
             <price>€265</price>
@@ -28,7 +28,7 @@
             <price>€400</price>
         </tour>
     </section>
-    <section name="turistic cities">
+    <section name="Turistic Cities">
         <tour>
             <place>Hong Kong, China</place>
             <price>€220</price>
@@ -42,7 +42,7 @@
             <price>€300</price>
         </tour>
     </section>
-    <section name="romantic places">
+    <section name="Romantic Places">
         <tour>
             <place>Cappadocia, Turkey</place>
             <price>€150</price>
@@ -56,7 +56,7 @@
             <price>€280</price>
         </tour>
     </section>
-    <section name="adventures">
+    <section name="Adventures">
         <tour>
             <place>Grand Canyon, USA</place>
             <price>€150</price>
