@@ -81,6 +81,36 @@ router.post('/post/json', function(req, res) {
 
 });
 
+
+router.post('/post/delete', function(req, res){
+
+    console.log(req.body);
+
+    function deleteJSON(obj){
+
+        console.log(obj)
+
+        XMLtoJSON('TripInnTrip.xml', function(err, result){
+            if (err) throw (err);
+
+            console.log(obj.sec);
+            console.log(obj.ent);
+            console.log(result);
+            
+            delete result.trip.section[obj.sec].tour[obj.ent];
+
+            JSONtoXML('TripInnTrip.xml', result, function(err){
+                if (err) console.log(err);
+            });
+        });
+    };
+
+    deleteJSON(req.body);
+
+    res.redirect('back');
+
+});
+
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
     const addr = server.address();
     console.log('Server listening at', addr.address + ':' + addr.port)
