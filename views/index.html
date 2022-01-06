@@ -40,7 +40,7 @@
                 </div>
                 <div id="results" class="col-lg-12 order-2 mb-5"></div>
                 <div class="col-lg-4 order-1 mb-3">
-                    <form>
+                    <form enctype="application/json" action="/post/json" method="post">
                         <div class="form-group">
                             <select id="section" class="form-control" name="sec_n">
                                 <option value="0">Beach</option>
@@ -49,13 +49,12 @@
                                 <option value="3">Romantic Places</option>
                                 <option value="4">Adventures</option>
                             </select>
-                            <input id="place" class="form-control mt-3" type="text" name="place" placeholder="place"/>
-                            <input id="price" class="form-control mt-3" type="text" name="price" placeholder="place"/>
+                            <input id="place" class="form-control mt-3" type="text" inputmode="numeric" name="place" placeholder="place"/>
+                            <input id="price" class="form-control mt-3" type="text" inputmode="numeric" name="price" placeholder="price"/>
                         </div>
                     </form>
                     <div class="d-grid gap-2">
                         <button id="append" class="btn btn-primary btn-block mt-3" onClick="append()">Submit</button>
-                        <button id="delete" class="btn btn-danger btn-block">Delete</button>
                         <p class="text-muted text-center">To delete an entry, click the required row first</p>
                     </div>
             </div>
