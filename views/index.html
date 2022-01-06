@@ -49,12 +49,13 @@
                                 <option value="3">Romantic Places</option>
                                 <option value="4">Adventures</option>
                             </select>
-                            <input id="place" class="form-control mt-3" type="text" inputmode="numeric" name="place" placeholder="place"/>
-                            <input id="price" class="form-control mt-3" type="text" inputmode="numeric" name="price" placeholder="price"/>
+                            <input id="place" class="form-control mt-3" type="text" inputmode="text" name="place" placeholder="place"/>
+                            <input id="price" class="form-control mt-3" type="text" onkeypress="return onlyNumberKey(event)" inputmode="numeric" name="price" placeholder="price"/>
                         </div>
                     </form>
                     <div class="d-grid gap-2">
                         <button id="append" class="btn btn-primary btn-block mt-3" onClick="append()">Submit</button>
+                        <button id="delete" class="btn btn-danger btn-block">Delete</button>
                         <p class="text-muted text-center">To delete an entry, click the required row first</p>
                     </div>
             </div>
