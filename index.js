@@ -36,14 +36,8 @@ const   router = express(),
     let xml = fs.readFileSync('TripInnTrip.xml', 'utf8'), 
         xsl = fs.readFileSync('TripInnTrip.xsl', 'utf8');
 
-    // console.log(xml);
-    // console.log(xsl);
-
     let doc = xmlParse(xml),
         stylesheet = xmlParse(xsl);
-
-    // console.log(doc);
-    // console.log(stylesheet);
 
     let result = xsltProcess(doc, stylesheet);
 
@@ -53,9 +47,9 @@ const   router = express(),
 
 });
 
-router.post ('/post/json', function (req, res) {
+    router.post ('/post/json', function (req, res) {
 
-    function appendJSON(obj) {
+        function appendJSON(obj) {
 
         console.log(obj)
 
