@@ -62,7 +62,7 @@ router.post ('/post/json', function (req, res) {
         XMLtoJSON ('TripInnTrip.xml', function (err, result){
             if (err) throw (err);
 
-            result.trip.section[obj.sec_n].tour.push({'place': obj.item, 'price': obj.price});
+            result.trip.section[obj.sec_n].tour.push({'place': obj.place, 'price': obj.price});
 
             console.log(JSON.stringify(result, null, " "));
 
