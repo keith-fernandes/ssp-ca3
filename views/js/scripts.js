@@ -6,24 +6,4 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-    function onlynum() {
-        var fm = document.getElementById("form2");
-        var ip = document.getElementById("num");
-        var tag = document.getElementById("value");
-        var res = ip.value;
-  
-        if (res != '') {
-            if (isNaN(res)) {
-                  
-                // Set input value empty
-                ip.value = "";
-                  
-                // Reset the form
-                fm.reset();
-                return false;
-            } else {
-                return true
-            }
-        }
-    }
 

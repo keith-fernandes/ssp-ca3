@@ -63,16 +63,33 @@ const   router = express(),
             JSONtoXML('TripInnTrip.xml', result, function(err){
                 if (err) console.log(err);
             });
-
         });
+    };
+    appendJSON(req.body);
+    res.redirect('back');
+});
 
+    router.post ('/post/delete', function(req, res){ 
+
+        function deleteJSON(obj){
+        console.log(obj)
+        XMLtoJSON('TripInnTrip.xml', function(err, result){
+            if (err) throw (err);
+            
+            delete result.trip.section[obj.sec].tour[obj.ent];
+
+
+            JSONtoXML('TripInnTrip.xml', result, function(err){
+                if (err) console.log(err);
+            });
+        });
     };
 
-    appendJSON(req.body);
-
+    deleteJSON(req.body);
     res.redirect('back');
 
 });
+
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
     const addr = server.address();
