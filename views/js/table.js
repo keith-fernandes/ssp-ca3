@@ -6,7 +6,7 @@ $.getHTMLuncached = function(url){
         type: 'GET', 
         cache: false, 
         success: function(html){
-            $("#results").append(html)
+            $("#results").append(html);
             select_row();
             }
         });
@@ -21,7 +21,7 @@ function select_row()
         $(this).addClass("selected");
         var sec = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
         var ent = $(this).attr("id") - 1;
-        delete_row(sec, ent);
+        
     })
 
 };    

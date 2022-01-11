@@ -53,13 +53,11 @@ const   router = express(),
 
 });
 
-router.post('/post/json', function(req, res) {
-
-    console.log(req.body);
+router.post('/post/json', function (req, res) {
 
     function appendJSON(obj) {
 
-        console.log(JSON.stringify(obj, null, " "))
+        console.log(obj);
 
         XMLtoJSON('TripInnTrip.xml', function (err, result){
             if (err) throw (err);
@@ -75,37 +73,8 @@ router.post('/post/json', function(req, res) {
         });
 
     };
+
     appendJSON(req.body);
-
-    res.redirect('back');
-
-});
-
-
-router.post('/post/delete', function(req, res){
-
-    console.log(req.body);
-
-    function deleteJSON(obj){
-
-        console.log(obj)
-
-        XMLtoJSON('TripInnTrip.xml', function(err, result){
-            if (err) throw (err);
-
-            console.log(obj.sec);
-            console.log(obj.ent);
-            console.log(result);
-            
-            delete result.trip.section[obj.sec].tour[obj.ent];
-
-            JSONtoXML('TripInnTrip.xml', result, function(err){
-                if (err) console.log(err);
-            });
-        });
-    };
-
-    deleteJSON(req.body);
 
     res.redirect('back');
 
