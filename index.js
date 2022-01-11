@@ -53,13 +53,13 @@ const   router = express(),
 
 });
 
-router.post('/post/json', function (req, res) {
+router.post ('/post/json', function (req, res) {
 
     function appendJSON(obj) {
 
-        console.log(obj);
+        console.log(obj)
 
-        XMLtoJSON('TripInnTrip.xml', function (err, result){
+        XMLtoJSON ('TripInnTrip.xml', function (err, result){
             if (err) throw (err);
 
             result.trip.section[obj.sec_n].tour.push({'place': obj.item, 'price': obj.price});
