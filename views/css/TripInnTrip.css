@@ -6,6 +6,10 @@ html {
 body {
 /* Margin bottom by footer height */
 margin-bottom: 60px;
+background-image: url(../image/30823-3-travel-hd.png);
+background-size: cover ;
+background-repeat: repeat-x;
+
 }
 
 .footer {
@@ -22,6 +26,8 @@ table, th, td {
     border-collapse: collapse;
     border: 1px solid black;
     text-align: center;
+    background-color: #FFF;
+    opacity: .95;
 }
 
 table {
@@ -40,7 +46,7 @@ th {
 }
 
 .selected {
-            background-color: #dc3545;
-            color: #FFF;
+            background-color: #0b8888;
+           
 }
 
